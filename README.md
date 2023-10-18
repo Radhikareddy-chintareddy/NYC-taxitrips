@@ -188,7 +188,7 @@ It is observed that maximum value is 19754, which seemed like an outlier, hence 
 Based on the trip distances binned in the ranges below is the histogram.
 
 
-![Alt text](image.png)
+![Alt text](TripDist_Histogram.png)
 
 # 7.	What are the distinct values for each field? (If applicable)
 
@@ -351,7 +351,7 @@ Hour: 02, Average Passengers: 1.76
 Hour: 01, Average Passengers: 1.76
 Hour: 00, Average Passengers: 1.76
 
-![Alt text](image-1.png)
+![Alt text](Hourly avg passengers.png)
 
 
 # 10.	Create a new CSV file which has only one out of every thousand rows.
@@ -383,7 +383,7 @@ f2.close()
 
 # 11.	Repeat step 9 with the reduced dataset and compare the two charts.
 
-![Alt text](image-2.png)
+![Alt text](Hourly avg passengers subset.png)
 
 When two charts of average passengers are compared i.e., for the total data and for the subset data it can be observed that both look similar, and also it seeems like the taxi's are busy at all times of the day only slightly busy around morning 4 to 5 am and most busy aroud midnight.
 
