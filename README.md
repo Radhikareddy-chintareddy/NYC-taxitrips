@@ -351,8 +351,7 @@ Hour: 02, Average Passengers: 1.76
 Hour: 01, Average Passengers: 1.76
 Hour: 00, Average Passengers: 1.76
 
-![Alt text](Hourly avg passengers.png)
-
+![Alt text](<Hourly avg passengers-1.png>)
 
 # 10.	Create a new CSV file which has only one out of every thousand rows.
 
@@ -383,7 +382,8 @@ f2.close()
 
 # 11.	Repeat step 9 with the reduced dataset and compare the two charts.
 
-![Alt text](Hourly avg passengers subset.png)
+![Alt text](<Hourly avg passengers subset-1.png>)
+
 
 When two charts of average passengers are compared i.e., for the total data and for the subset data it can be observed that both look similar, and also it seeems like the taxi's are busy at all times of the day only slightly busy around morning 4 to 5 am and most busy aroud midnight.
 
