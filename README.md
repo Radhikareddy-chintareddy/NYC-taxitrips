@@ -1,5 +1,24 @@
+# INTRODUCTION:
+The New York City Taxi Trip Data provides a comprehensive view into the bustling world of taxi transportation within the vibrant metropolis of New York City during the year 2013. With over 13 million rows of data, this dataset offers a rich resource for understanding the dynamics of taxi services, passenger behaviors, and urban mobility patterns.
+Handling large datasets poses significant challenges, especially when conventional methods for data manipulation and analysis become impractical due to memory constraints. In such scenarios, adopting techniques tailored for big data becomes imperative to glean insights efficiently. In this code example, we'll demonstrate how to process and analyze large datasets using techniques suitable for big data, focusing on reading data line by line and employing memory-efficient methods for gaining insights.
 # New York City Taxi Trip Data
 This is a New york cty taxi data covering the year of 2013.
+
+# 1. What datetime range does your data cover?  How many rows are there total?
+
+There are total 13990177 rows.
+
+<ins>**Pickup Datetime range:**<ins> 
+
+Minimum Date: 2013-02-01 00:00:00
+
+Maximum Date: 2013-02-28 23:59:59
+
+<ins>**Dropoff Datetime Range-**<ins>
+
+Minimum Date: 2013-02-01 00:00:55
+
+Maximum Date: 2013-03-01 01:15:48
 
 # 2.	What are the field names?  Give descriptions for each field.
 As per the data provided, there are in total 14 attributes. The attributes are a combination of numerical and categorical variables. 
@@ -33,23 +52,6 @@ Out of these all, medallion, hack_license, vendor_id, rate_code, store_and_fwd_f
 **Pickup Longitude-** Pickup Longitude.
 
 **Dropoff Longitude-** Dropoff longitudde.
-
-
-# 1. What datetime range does your data cover?  How many rows are there total?
-
-There are total 13990177 rows.
-
-<ins>**Pickup Datetime range:**<ins> 
-
-Minimum Date: 2013-02-01 00:00:00
-
-Maximum Date: 2013-02-28 23:59:59
-
-<ins>**Dropoff Datetime Range-**<ins>
-
-Minimum Date: 2013-02-01 00:00:55
-
-Maximum Date: 2013-03-01 01:15:48
 
 # 3.	Give some sample data for each field.
 
