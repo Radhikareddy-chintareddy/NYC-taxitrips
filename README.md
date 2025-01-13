@@ -1,6 +1,88 @@
-# INTRODUCTION:
-The New York City Taxi Trip Data provides a comprehensive view into the bustling world of taxi transportation within the vibrant metropolis of New York City during the year 2013. With over 13 million rows of data, this dataset offers a rich resource for understanding the dynamics of taxi services, passenger behaviors, and urban mobility patterns.
-Handling large datasets poses significant challenges, especially when conventional methods for data manipulation and analysis become impractical due to memory constraints. In such scenarios, adopting techniques tailored for big data becomes imperative to glean insights efficiently. In this code example, we'll demonstrate how to process and analyze large datasets using techniques suitable for big data, focusing on reading data line by line and employing memory-efficient methods for gaining insights.
+# Introduction:
+The New York City Taxi Trip Data offers a detailed view of urban mobility within New York City during 2013. With over 13 million rows, this dataset provides insights into taxi services, passenger behaviors, and transportation patterns. 
+
+This project addresses the challenges of handling such large datasets by employing memory-efficient techniques. Instead of conventional libraries like `pandas`, which load entire datasets into memory, this project demonstrates how to process data line-by-line, enabling efficient analysis without exceeding system limitations. By focusing on scalable methods, the project illustrates how to extract meaningful insights from big data in resource-constrained environments.
+### Programming and Libraries
+- **Python**: For data processing and analysis.
+- **csv.reader**: To process large datasets line-by-line in a memory-efficient manner.
+- **Matplotlib**: For creating visualizations like histograms and bar charts.
+- **Haversine Formula**: For calculating distances between geographic coordinates.
+
+### Concepts and Techniques
+- **Big Data Handling**: Techniques to process datasets with millions of rows without overloading memory.
+- **Outlier Detection**: Identifying anomalies in passenger counts, trip distances, and GPS coordinates.
+- **Data Sampling**: Creating subsets for exploratory analysis.
+- **Statistics and Summarization**: Extracting key metrics like averages, percentiles, and counts.
+
+### Platforms and Tools
+- **Git/GitHub**: For version control and sharing the project.
+## Objective
+This project demonstrates techniques for handling and analyzing large datasets efficiently without relying on memory-intensive methods. Using the 2013 NYC Taxi Trip dataset, which contains over 13 million rows, the project showcases how to:
+
+- Process data line-by-line using Python’s `csv.reader` to minimize memory usage.
+- Perform essential data analysis and exploration without loading the entire dataset into memory.
+- Highlight challenges in managing large-scale data and solutions tailored for memory-constrained environments.
+
+By adopting these methods, the project provides a blueprint for scalable data processing that is particularly relevant for big data scenarios.
+
+---
+
+## Challenges and Solutions
+
+### Challenges
+Handling a dataset of this scale presents several key challenges:
+
+1. **Memory Constraints:**
+   - Loading millions of rows into memory can lead to performance degradation or crashes, especially on systems with limited resources.
+
+2. **Data Anomalies:**
+   - Detecting and managing outliers, missing values, and inconsistent data formats without the convenience of in-memory operations.
+
+3. **Computational Overhead:**
+   - Performing calculations (e.g., statistics, distance metrics) efficiently while iterating over data.
+
+4. **Visualization and Sampling:**
+   - Generating meaningful visualizations without access to the entire dataset.
+
+### Solutions
+1. **Memory-Efficient Processing:**
+   - Data is processed line-by-line using Python’s `csv.reader`, ensuring only one row is loaded into memory at a time.
+
+2. **Outlier and Null Value Handling:**
+   - Data anomalies are identified through incremental computations, such as tracking minimum/maximum values and calculating percentiles.
+
+3. **Efficient Calculations:**
+   - Essential computations (e.g., Haversine distance, averages) are performed iteratively without requiring additional memory allocation.
+
+4. **Subset Sampling:**
+   - A subset of the dataset is created by selecting every 1,000th row, allowing for exploratory analysis and visualization without significant memory usage.
+
+---
+
+## Key Features
+The project’s core functionalities include:
+
+1. **Scalable Data Processing:**
+   - Line-by-line data handling ensures the solution is scalable to datasets much larger than available memory.
+
+2. **Haversine Distance Calculation:**
+   - Computes the great-circle distance between pickup and dropoff locations for trip distance analysis.
+
+3. **Anomaly Detection:**
+   - Identifies and flags outliers in passenger counts, trip times, and GPS coordinates.
+
+4. **Statistics and Insights:**
+   - Extracts key metrics such as date ranges, unique counts, and descriptive statistics for numerical fields.
+
+5. **Visualization:**
+   - Generates histograms and bar charts for key insights (e.g., trip distances, hourly passenger counts) using sampled data.
+
+6. **Data Subsampling:**
+   - Creates a reduced dataset by sampling one row every 1,000 rows, enabling efficient analysis and comparison.
+
+---
+
+
 # New York City Taxi Trip Data
 This is a New york cty taxi data covering the year of 2013.
 
@@ -154,14 +236,14 @@ As per the above values, GPS locations are  marked in the google map's and prese
 
 
 
-![Alt text](<NY Lat Lon map.PNG>)
+![Alt text](<images/NY Lat Lon map.PNG>)
 
 
-![Alt text](Trips_zoom.PNG)
+![Alt text](images/Trips_zoom.PNG)
 
 ACTUAL NY NEIGHBOURHOOD MAP for comparision
 
-![Alt text](NYC-neighborhood-borders-1024x683.png)
+![Alt text](images/NYC-neighborhood-borders-1024x683.png)
 
 
 # 6.	What is the average computed trip distance? (You should use Haversine Distance) a.	Draw a histogram of the trip distances binned any way you see fit.
@@ -190,7 +272,7 @@ It is observed that maximum value is 19754, which seemed like an outlier, hence 
 Based on the trip distances binned in the ranges below is the histogram.
 
 
-![Alt text](TripDist_Histogram.png)
+![Alt text](images/Trip%20distance%20histogram.png)
 
 # 7.	What are the distinct values for each field? (If applicable)
 
@@ -353,7 +435,7 @@ Hour: 02, Average Passengers: 1.76
 Hour: 01, Average Passengers: 1.76
 Hour: 00, Average Passengers: 1.76
 
-![Alt text](<Hourly avg passengers-1.png>)
+![Alt text](<images/Hourly avg passengers All data.png>)
 
 # 10.	Create a new CSV file which has only one out of every thousand rows.
 
@@ -384,7 +466,7 @@ f2.close()
 
 # 11.	Repeat step 9 with the reduced dataset and compare the two charts.
 
-![Alt text](<Hourly avg passengers subset-1.png>)
+![Alt text](<images/Hourly Avg Passengers _Subset.png>)
 
 
 When two charts of average passengers are compared i.e., for the total data and for the subset data it can be observed that both look similar, and also it seeems like the taxi's are busy at all times of the day only slightly busy around morning 4 to 5 am and most busy aroud midnight.
